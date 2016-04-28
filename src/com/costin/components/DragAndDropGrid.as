@@ -5,7 +5,7 @@ import flash.events.TimerEvent;
 import flash.geom.Point;
 import flash.utils.Timer;
 
-import mx.core.DragSource;
+// import mx.core.DragSource;
 import mx.core.IFactory;
 import mx.core.IFlexDisplayObject;
 import mx.core.UIComponent;
