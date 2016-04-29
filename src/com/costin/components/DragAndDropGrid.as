@@ -92,21 +92,21 @@ public class DragAndDropGrid extends DataGrid {
 
     }
 
-    protected function timerActivityHandler(event:TimerEvent):void {
-        if (stage.mouseX < 130) {
-            if (stage.mouseX > 90) {
-                grid.horizontalScrollPosition -= 150;
-            } else
-                grid.horizontalScrollPosition -= 90;
-            this.invalidateDisplayList();
-        } else if (stage.mouseX > stage.stageWidth - 130) {
-            if (stage.mouseX > stage.stageWidth - 90) {
-                grid.horizontalScrollPosition += 150;
-            } else
-                grid.horizontalScrollPosition += 90;
-        }
-        ;
-    }
+    // protected function timerActivityHandler(event:TimerEvent):void {
+    //     if (stage.mouseX < 130) {
+    //         if (stage.mouseX > 90) {
+    //             grid.horizontalScrollPosition -= 150;
+    //         } else
+    //             grid.horizontalScrollPosition -= 90;
+    //         this.invalidateDisplayList();
+    //     } else if (stage.mouseX > stage.stageWidth - 130) {
+    //         if (stage.mouseX > stage.stageWidth - 90) {
+    //             grid.horizontalScrollPosition += 150;
+    //         } else
+    //             grid.horizontalScrollPosition += 90;
+    //     }
+    //     ;
+    // }
 
     private function stopDragTimer(str:String = null):void {
         dragTimer.stop();
