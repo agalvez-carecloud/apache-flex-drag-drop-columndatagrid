@@ -175,15 +175,15 @@ public class DragAndDropGrid extends DataGrid {
         var newDropIndex:int = this.columnHeaderGroup.getHeaderIndexAt(pt.x, pt.y);
         if (newDropIndex != -1) {
             var renderer:IGridItemRenderer = this.columnHeaderGroup.getHeaderRendererAt(newDropIndex);
-            if (!columnMoveDropIndicator) {
-                columnMoveDropIndicator = new DragDropIndicator;
-                this.columnHeaderGroup.overlay.addDisplayObject(columnMoveDropIndicator);
-            }
-            if (pt.x < renderer.x + renderer.width / 2)
-                columnMoveDropIndicator.x = renderer.x - columnMoveDropIndicator.width / 2;
-            else {
-                columnMoveDropIndicator.x = renderer.x + renderer.width - columnMoveDropIndicator.width / 2;
-                newDropIndex++;
+            // if (!columnMoveDropIndicator) {
+            //     columnMoveDropIndicator = new DragDropIndicator;
+            //     this.columnHeaderGroup.overlay.addDisplayObject(columnMoveDropIndicator);
+            // }
+            // if (pt.x < renderer.x + renderer.width / 2)
+            //     columnMoveDropIndicator.x = renderer.x - columnMoveDropIndicator.width / 2;
+            // else {
+            //     columnMoveDropIndicator.x = renderer.x + renderer.width - columnMoveDropIndicator.width / 2;
+            //     newDropIndex++;
             }
             dropIndex = newDropIndex;
         }
