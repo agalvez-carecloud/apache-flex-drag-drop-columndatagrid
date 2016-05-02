@@ -68,27 +68,27 @@ public class DragAndDropGrid extends DataGrid {
         var ds:DragSource = new DragSource();
         ds.addData(dragColumn, "spark.components.gridClasses.GridColumn");
         var factory:IFactory = dragColumn.headerRenderer;
-        if (!factory)
-            factory = this.columnHeaderGroup.headerRenderer;
-        var renderer:IGridItemRenderer = IGridItemRenderer(factory.newInstance());
-        renderer.visible = true;
-        renderer.column = dragColumn;
-        renderer.label = dragColumn.headerText;
-        var currentRenderer:IGridItemRenderer = this.columnHeaderGroup.getHeaderRendererAt(event.columnIndex);
-        renderer.width = currentRenderer.width;
-        renderer.height = currentRenderer.height;
-        renderer.prepare(false);
-        var pt:Point = new Point(0, 0);
-        pt = DisplayObject(currentRenderer).localToGlobal(pt);
-        pt = DisplayObject(this).globalToLocal(pt);
-        DragManager.doDrag(this as UIComponent, ds, event, renderer as IFlexDisplayObject, -pt.x, -pt.y);
-        renderer.owner = this;
+        // if (!factory)
+        //     factory = this.columnHeaderGroup.headerRenderer;
+        // var renderer:IGridItemRenderer = IGridItemRenderer(factory.newInstance());
+        // renderer.visible = true;
+        // renderer.column = dragColumn;
+        // renderer.label = dragColumn.headerText;
+        // var currentRenderer:IGridItemRenderer = this.columnHeaderGroup.getHeaderRendererAt(event.columnIndex);
+        // renderer.width = currentRenderer.width;
+        // renderer.height = currentRenderer.height;
+        // renderer.prepare(false);
+        // var pt:Point = new Point(0, 0);
+        // pt = DisplayObject(currentRenderer).localToGlobal(pt);
+        // pt = DisplayObject(this).globalToLocal(pt);
+        // DragManager.doDrag(this as UIComponent, ds, event, renderer as IFlexDisplayObject, -pt.x, -pt.y);
+        // renderer.owner = this;
 
-        this.columnHeaderGroup.addEventListener(DragEvent.DRAG_ENTER, columnDragEnterHandler);
-        this.columnHeaderGroup.addEventListener(DragEvent.DRAG_COMPLETE, columnDragCompleteHandler);
-        this.addEventListener(DragEvent.DRAG_COMPLETE, columnDragCompleteHandler);
-        dragTimer.addEventListener(TimerEvent.TIMER, timerActivityHandler);
-        dragTimer.start();
+        // this.columnHeaderGroup.addEventListener(DragEvent.DRAG_ENTER, columnDragEnterHandler);
+        // this.columnHeaderGroup.addEventListener(DragEvent.DRAG_COMPLETE, columnDragCompleteHandler);
+        // this.addEventListener(DragEvent.DRAG_COMPLETE, columnDragCompleteHandler);
+        // dragTimer.addEventListener(TimerEvent.TIMER, timerActivityHandler);
+        // dragTimer.start();
 
     }
 
