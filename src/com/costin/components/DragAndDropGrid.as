@@ -45,13 +45,13 @@ public class DragAndDropGrid extends DataGrid {
     /**
      *  handler the column header dragging
      */
-    protected function gridMouseDragHandler(event:GridEvent):void {
-        if (DragManager.isDragging)
-            return;
-        if (isDraggingColumn(event)) {
-            startColumnDragDrop(event);
-        }
-    }
+    // protected function gridMouseDragHandler(event:GridEvent):void {
+    //     if (DragManager.isDragging)
+    //         return;
+    //     if (isDraggingColumn(event)) {
+    //         startColumnDragDrop(event);
+    //     }
+    // }
 
     /**
      * Verifies if the dragging item is a column and not a cell
