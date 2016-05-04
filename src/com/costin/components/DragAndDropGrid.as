@@ -59,9 +59,9 @@ public class DragAndDropGrid extends DataGrid {
      * @param event GridEvent
      * @return True if is a GridColumn, false otherwise
      */
-    private function isDraggingColumn(event:GridEvent):Boolean {
-        return event.column && event.rowIndex == -1;
-    }
+    // private function isDraggingColumn(event:GridEvent):Boolean {
+    //     return event.column && event.rowIndex == -1;
+    // }
 
     private function startColumnDragDrop(event:GridEvent):void {
         dragColumn = event.column;
