@@ -20,12 +20,12 @@ import spark.events.GridEvent;
 
 public class DragAndDropGrid extends DataGrid {
 
-    private var dragColumn:GridColumn;
-    private var dropIndex:int;
-    private var columnMoveDropIndicator:DisplayObject;
-    private var lastXMousePosition:int;
-    private var dragTimer:Timer = new Timer(100, 1000);
-    /**
+    // private var dragColumn:GridColumn;
+    // private var dropIndex:int;
+    // private var columnMoveDropIndicator:DisplayObject;
+    // private var lastXMousePosition:int;
+    // private var dragTimer:Timer = new Timer(100, 1000);
+    // /**
      * horizontal scroll position back variable
      * after drop column the scroll position is lost
      * and is set back by setScrollBackWhereItWas in the callLater method trigger
