@@ -5,26 +5,26 @@ import flash.events.TimerEvent;
 import flash.geom.Point;
 import flash.utils.Timer;
 
-import mx.core.DragSource;
-import mx.core.IFactory;
-import mx.core.IFlexDisplayObject;
-import mx.core.UIComponent;
-import mx.events.DragEvent;
-import mx.events.FlexEvent;
-import mx.managers.DragManager;
+// import mx.core.DragSource;
+// import mx.core.IFactory;
+// import mx.core.IFlexDisplayObject;
+// import mx.core.UIComponent;
+// import mx.events.DragEvent;
+// import mx.events.FlexEvent;
+// import mx.managers.DragManager;
 
-import spark.components.DataGrid;
-import spark.components.gridClasses.GridColumn;
-import spark.components.gridClasses.IGridItemRenderer;
-import spark.events.GridEvent;
+// import spark.components.DataGrid;
+// import spark.components.gridClasses.GridColumn;
+// import spark.components.gridClasses.IGridItemRenderer;
+// import spark.events.GridEvent;
 
 public class DragAndDropGrid extends DataGrid {
 
-    private var dragColumn:GridColumn;
-    private var dropIndex:int;
-    private var columnMoveDropIndicator:DisplayObject;
-    private var lastXMousePosition:int;
-    private var dragTimer:Timer = new Timer(100, 1000);
+    // private var dragColumn:GridColumn;
+    // private var dropIndex:int;
+    // private var columnMoveDropIndicator:DisplayObject;
+    // private var lastXMousePosition:int;
+    // private var dragTimer:Timer = new Timer(100, 1000);
     /**
      * horizontal scroll position back variable
      * after drop column the scroll position is lost
